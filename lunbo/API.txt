@@ -1,0 +1,27 @@
+
+
+
+  Author: Merlin
+  Date: 2016-2-15
+  Time: PM 19:20
+  contact：QQ 77642304
+ 
+ 
+ 
+    本插件支持1个或多个轮播图(每个轮播图只能插入7张图片)
+   
+    在创建的html中引入插件  并在样式中设置zy-slide对样式进行套用
+    在按钮的样式上设置样式为zy-prev 或  zy-next 对应插件样式可实现其对应的功能
+    
+    
+    在js文件中调用zySlide方法 此方法调用slide方法可以使图片进行轮播
+  delay  介绍：控制图片展开时所需要耗时多少
+  spend  介绍：切换图片所需的耗时 
+  (delay 和 spend 两者可以只写一个，两者都写，或两者都不写)
+  当两者都没有设置的情况下，则会被设置为默认数值：delay:1000,spend:2000;若只设置一个，则没有设置的参数为默认数值
+  
+  在js文件中找到跟标签(任何选择器)调用zySlide方法，将delay 和 spend 以对象的方式写在方法中
+  如下所示：
+  jQuery('.slide').zySlide({spend:3000}).css({
+	'backgroundColor':'red'
+  });

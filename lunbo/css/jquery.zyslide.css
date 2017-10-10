@@ -1,0 +1,60 @@
+/*body,ul,li{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 13px;
+	color: white;
+	background-color: black;
+}*/
+.zy-slide{
+	/*两个section(前一张/下一张) 要做相对定位*/
+	position: relative;
+	width: 754px;
+	height: 292px;
+	margin: 115px auto 0;
+	/*overflow: hidden;*/
+}
+.zy-slide .zy-prev,.zy-slide .zy-next{
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 80px;
+	line-height: 80px;
+	margin-top: -40px;
+	cursor: pointer;
+	text-align: center;
+}
+.zy-slide .zy-prev{
+	left: -60px;
+}
+.zy-slide .zy-next{
+	right:-60px;
+}
+.zy-slide  ul{
+	/*7 个 li 相对父标签做绝对定位*/
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 754px;
+	height: 292px;
+}
+.zy-slide  li{
+	list-style: none;
+	position: absolute;
+	border: 2px solid black;
+	background-color: black;
+	height: 0px;
+	width: 0px;
+	top: 146px;
+	left: 377px;
+	overflow: hidden;
+	z-index: 0;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.zy-slide  li img{
+	width: 100%;
+	height: 100%;
+	
+}
